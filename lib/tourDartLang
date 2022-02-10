@@ -1,0 +1,169 @@
+// Define a function
+void printInteger(int num) {
+  print("The number is $num. ");
+}
+
+// late variable
+late String descriptions;
+
+
+
+void main() {
+  var number = 42;
+  printInteger(number);
+
+  // this is a comment
+
+  // build in type: int, String, List, bool
+  int yourNum = 42;
+  print(yourNum);
+
+  String name = "Hello";
+  print(name);
+
+  bool guessRight = true;
+  print(guessRight);
+
+  List countries = ["London", "Conakry", "Bamako"];
+  print(countries);
+
+  // string interpolation $variable or ${expression}
+  int bigFigure = 2000289739875938;
+  print("You are a massive number $bigFigure");
+
+  var changeMeAnyTime = "big word";
+  print(changeMeAnyTime);
+
+  // everything is dart is an object
+
+  // null safety int? = might be an integer or might be nill or int! assert your right and i am int
+
+  // dart support generic types like List<int> a list of integers or List<Object> a list of objects of any type
+
+  // if an identifer starts with _ its private
+
+  // dart support conditional expression: condition ? expr1 : expr2
+
+
+  // VARIABLES
+  var nameName = "Bob";
+  Object nameNameName = "Bob";
+  // explicit
+  String explicitName = "Bob";
+  print(explicitName);
+
+  descriptions = "Friday";
+  print(descriptions);
+
+  // final and const
+  final yourFinalName = 'Marki';
+  print(yourFinalName);
+  final String nickname = "Bobby";
+  print(nickname);
+
+  const bar = 10000;
+  print(bar);
+  const double atm = 1.0934343 * bar;
+  print(atm);
+
+  // use conts to declare const values
+  var foo = const [];
+  print(foo);
+  final bar2 = const [];
+  print(bar2);
+  const baz = [];
+  print(baz);
+
+  // BUILD INT TYPES
+  // Numbers: int and double
+  var x = 1;
+  var hex = 0xDEADBEEF;
+  var exponent = 8e5;
+
+
+  // String to int
+  var one = int.parse("1");
+  print(one);
+
+  // string to double
+  var onePointToOne = double.parse("1.1");
+  print(onePointToOne);
+
+
+  const msPerSecond = 1000;
+  const secondsUntilRetry = 5;
+  const msUntilRetry = secondsUntilRetry * msPerSecond;
+  print("The ms untilRetry is: $msUntilRetry");
+
+  // string
+  String s1 = "Sir ";
+  String s2 = ' Knight BlackX';
+
+  // string interpolotion
+  print("Welcome  $s1 and $s2 ");
+
+  // string concatination
+  print(s1 + s2);
+
+  // multiline
+  String s3 = """ YOU ARE 
+  SJFHJKDSHFKJHDSKJHFJKDHSKJAHFJKDSAHFKJDSHFKJDSHKAFJDSHFLJKDS
+  """;
+  print(s3);
+
+  // bool
+  // check for empty string
+  var fullName = "";
+  print(fullName.isEmpty);
+
+  // check for zero
+  var hitPoints = 0;
+  print(hitPoints <= 0);
+
+
+  // list
+  var list = [1, 2, 3];
+  print(list);
+
+  var newList = [
+    "Car",
+    "Boat",
+    "Plane",
+  ];
+
+  print(newList);
+
+  var aList = [1, 2, 3, 4];
+  var bList = [32, 32, 43, 44];
+  var cList = [0, ...aList, ...bList];
+  print(cList);
+  print(aList.length); // check the length
+
+  // set
+  var halogens = {"flourine", "chlorine", "bromine", "iodine"};
+  print(halogens);
+
+  // create empty set
+  var emptySet = <String>{};
+  print(emptySet);
+
+  // maps aka dictionaries
+  var gifts = {
+    // key   value
+    "first": "amadou",
+    "second": "ibrahim",
+    "third": "mamadou",
+  };
+
+
+
+
+
+
+
+
+
+}
+
+
+
