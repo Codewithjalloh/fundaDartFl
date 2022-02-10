@@ -1,3 +1,6 @@
+// import packages
+import 'package:characters/characters.dart';
+
 // Define a function
 void printInteger(int num) {
   print("The number is $num. ");
@@ -6,6 +9,12 @@ void printInteger(int num) {
 // late variable
 late String descriptions;
 
+
+// FUNCTIONS
+
+void sayHello() {
+  print("Welcome");
+}
 
 
 void main() {
@@ -154,6 +163,27 @@ void main() {
     "second": "ibrahim",
     "third": "mamadou",
   };
+
+  var noblePeople = {
+    1: "Father",
+    11: "Me",
+    20: "Kiki",
+  };
+
+  // same objects using map
+  var random = Map<String, int>();
+  random["People"] = 0;
+  random["Animals"] = 1;
+  random["Alien"] = 2;
+
+  // runes
+  var hi = "Hi 🏴󠁧󠁢󠁥󠁮󠁧󠁿";
+  print(hi);
+  print("the end of the string: ${hi.substring(hi.length - 1)}" );
+  print("the last character: ${hi.characters.last}\n");
+
+  // functions
+  sayHello();
 
 
 
